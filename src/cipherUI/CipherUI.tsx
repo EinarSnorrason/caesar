@@ -9,10 +9,10 @@ const CipherUI = () => {
     const [code,setCode] = useState('')
     const [output,setOutput] = useState('')
     const handleEncode = () => {
-        setOutput(caesarCipher({ message: input, code }))
+        setOutput(caesarCipher(input,code))
     }
     const handleDecode = () => {
-      setOutput(caesarCipher({ message: input, code, decode: true }))
+      setOutput(caesarCipher(input,code,true))
   }
     return (
         <div className="cipherGrid">
