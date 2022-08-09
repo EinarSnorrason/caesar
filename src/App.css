@@ -2,29 +2,27 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
 
 button {
-  background-color: #4CAF50;
+  background-color: #4879d2;
   border: none;
+  width: 95%;
   color: white;
-  padding: 15px 32px;
+  padding: 5px 12px;
   text-align: center;
-  border-radius: 8px;
+  border-radius: 4px;
   text-decoration: none;
   display: inline-block;
   font-size: 16px;
-  margin: 4px 2px;
+  margin: 7px 2px;
   cursor: pointer;
+  transition-duration: 0.4s;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+button:hover {
+  background-color: white;
+  border:5px #4879d2;
+  color: black;
 }
 
 textarea {
@@ -39,7 +37,21 @@ textarea {
   resize: none;
 }
 
+input{
+  width: 95%;
+  height: 15px;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  margin: 7px 2px;
+  border-radius: 4px;
+  background-color: #f8f8f8;
+  font-size: 16px;
+  resize: none;
+}
+
 .App-header {
+  width: 100%;
   background-color: #7ba0ea;
   min-height: 100vh;
   display: flex;
@@ -54,11 +66,3 @@ textarea {
   color: #61dafb;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}

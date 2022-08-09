@@ -2,6 +2,7 @@ import React,{useState}from "react";
 import caesarCipher from "./cipher";
 import CipherButton from "./CipherButton";
 import CodeForm from "./CodeForm";
+import "./CipherUI.css"
 
 const CipherUI = () => {
     const [input,setInput] = useState('')
@@ -14,7 +15,6 @@ const CipherUI = () => {
       setOutput(caesarCipher(input,code,true))
   }
     return (
-      <div className="cipherElements">
         <div className="cipherGrid">
           <textarea 
             value = {input}
@@ -30,7 +30,7 @@ const CipherUI = () => {
             readOnly = {true}
           ></textarea>
         </div>
-      </div>
+
     );
   }
 
